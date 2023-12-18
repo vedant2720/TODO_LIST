@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>
+            <%= title %>
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/css/home.css">
+    </head>
+    <body>
+        <h1 id="page-heading">
+            TODO APP
+        </h1>
+        <form action="">
+            <div id="todo-list">
+                <div id="discription">
+                    <p id="title-desc">DESCRIPTION</p>
+                    <div id="discription-info">
+                        <!-- <label for="descriptionInput">Enter description:</label> -->
+                        <input type="text" id="descriptionInput" name="descriptionInput" placeholder="What do you need to do?">
+                    </div>
+                </div>              
+                <div id="cat_date">
+                    <div id="category">
+                        <label for="categoryDropdown" id="cat_drop_name">CATEGORY</label>
+                        <select id="categoryDropdown">
+                            <option value="">Select your option</option>
+                          <option value="personal">Personal</option>
+                          <option value="work">Work</option>
+                          <option value="cleaning">Cleaning</option>
+                          <option value="school">School</option>
+                          <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div id="date">
+                        <label for="dateInput" id="date_label">DUE DATE</label>
+                        <input type="date" id="dateInput" name="dateInput">
+                    </div>                  
+                </div>
+                <!-- buttons part clear -->
+                <div>
+                    <button id="add">
+                        <i class="fas fa-plus fa-solid"></i>
+                        ADD TASK
+                    </button>
+                    <button id="delete">
+                        <i class="fas fa-trash fa-sharp fa-solid"></i>
+                        DELETE TASKS
+                    </button>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
